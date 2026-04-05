@@ -1,0 +1,187 @@
+/* ── Pages Viewer Plugin ── */
+
+.pages-viewer-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	height: 100%;
+	overflow-y: auto;
+	padding: 20px;
+}
+
+/* Loading */
+.pages-viewer-loading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	color: var(--text-muted);
+	font-size: 14px;
+}
+
+/* Main content wrapper */
+.pages-viewer-content {
+	max-width: 900px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+/* Header */
+.pages-viewer-header {
+	display: flex;
+	align-items: baseline;
+	gap: 2px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.pages-viewer-filename {
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--text-normal);
+}
+
+.pages-viewer-ext {
+	font-size: 14px;
+	color: var(--text-muted);
+}
+
+/* Preview area */
+.pages-viewer-preview {
+	display: flex;
+	justify-content: center;
+	background: var(--background-secondary);
+	border-radius: 8px;
+	overflow: hidden;
+	border: 1px solid var(--background-modifier-border);
+}
+
+.pages-viewer-img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.pages-viewer-pdf {
+	width: 100%;
+	min-height: 80vh;
+	border: none;
+}
+
+/* Info bar */
+.pages-viewer-info {
+	display: flex;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+
+.pages-viewer-meta {
+	font-size: 12px;
+	color: var(--text-muted);
+}
+
+/* Gallery (embedded images fallback) */
+.pages-viewer-notice {
+	color: var(--text-muted);
+	font-size: 13px;
+	font-style: italic;
+}
+
+.pages-viewer-gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 12px;
+}
+
+.pages-viewer-gallery-img {
+	width: 100%;
+	height: auto;
+	border-radius: 6px;
+	border: 1px solid var(--background-modifier-border);
+}
+
+/* No preview state */
+.pages-viewer-no-preview {
+	text-align: center;
+	padding: 40px 20px;
+	color: var(--text-muted);
+}
+
+.pages-viewer-icon {
+	font-size: 48px;
+	margin-bottom: 16px;
+}
+
+.pages-viewer-hint {
+	font-size: 13px;
+	color: var(--text-faint);
+}
+
+.pages-viewer-details {
+	margin-top: 20px;
+	text-align: left;
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pages-viewer-details summary {
+	cursor: pointer;
+	color: var(--text-muted);
+	font-size: 13px;
+}
+
+.pages-viewer-details ul {
+	font-size: 12px;
+	color: var(--text-faint);
+	list-style: none;
+	padding-left: 12px;
+	margin-top: 8px;
+}
+
+.pages-viewer-details li {
+	padding: 2px 0;
+	font-family: var(--font-monospace);
+}
+
+/* Error state */
+.pages-viewer-error {
+	text-align: center;
+	padding: 40px 20px;
+}
+
+.pages-viewer-error-title {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--text-error);
+}
+
+.pages-viewer-error-message {
+	font-size: 13px;
+	color: var(--text-muted);
+	font-family: var(--font-monospace);
+}
+
+/* Actions */
+.pages-viewer-actions {
+	display: flex;
+	justify-content: center;
+	padding-top: 8px;
+}
+
+.pages-viewer-open-btn {
+	cursor: pointer;
+	padding: 8px 20px;
+	border-radius: 6px;
+	border: 1px solid var(--background-modifier-border);
+	background: var(--interactive-normal);
+	color: var(--text-normal);
+	font-size: 13px;
+	transition: background 0.15s ease;
+}
+
+.pages-viewer-open-btn:hover {
+	background: var(--interactive-hover);
+}
