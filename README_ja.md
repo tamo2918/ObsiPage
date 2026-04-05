@@ -28,7 +28,7 @@ Apple Pages のファイルは実は ZIP アーカイブで、保存時にドキ
 ### 手動インストール
 
 1. 最新リリースから `main.js`、`manifest.json`、`styles.css` をダウンロード
-2. Vault の `.obsidian/plugins/` 内に `obsidian-pages-viewer` フォルダを作成
+2. Vault の `.obsidian/plugins/` 内に `pages-viewer` フォルダを作成
 3. 上記 3 ファイルをそのフォルダにコピー
 4. Obsidian を再起動
 5. **設定 → コミュニティプラグイン** から **Pages Viewer** を有効化
@@ -42,7 +42,7 @@ npm install
 npm run build
 ```
 
-ビルド後、`main.js`、`manifest.json`、`styles.css` を Vault の `.obsidian/plugins/obsidian-pages-viewer/` にコピーしてください。
+ビルド後、`main.js`、`manifest.json`、`styles.css` を Vault の `.obsidian/plugins/pages-viewer/` にコピーしてください。
 
 ## 対応ファイル形式
 

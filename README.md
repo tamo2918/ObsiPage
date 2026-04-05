@@ -28,7 +28,7 @@ Apple Pages files are actually ZIP archives that contain a preview image (`previ
 ### Manual Installation
 
 1. Download the latest release (`main.js`, `manifest.json`, `styles.css`)
-2. Create a folder named `obsidian-pages-viewer` inside your vault's `.obsidian/plugins/` directory
+2. Create a folder named `pages-viewer` inside your vault's `.obsidian/plugins/` directory
 3. Place the three files into that folder
 4. Restart Obsidian
 5. Go to **Settings → Community plugins** and enable **Pages Viewer**
@@ -42,7 +42,7 @@ npm install
 npm run build
 ```
 
-Then copy `main.js`, `manifest.json`, and `styles.css` to your vault's `.obsidian/plugins/obsidian-pages-viewer/` directory.
+Then copy `main.js`, `manifest.json`, and `styles.css` to your vault's `.obsidian/plugins/pages-viewer/` directory.
 
 ## Supported File Formats
 
