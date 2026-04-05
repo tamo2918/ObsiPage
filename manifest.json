@@ -3,7 +3,7 @@
   "name": "Pages Viewer",
   "version": "1.0.0",
   "minAppVersion": "0.15.0",
-  "description": "View Apple Pages (.pages) files directly inside Obsidian by extracting embedded preview images.",
+  "description": "View Apple Pages (.pages) files by extracting and displaying embedded preview images.",
   "author": "tamo2918",
   "authorUrl": "https://github.com/tamo2918",
   "isDesktopOnly": true
